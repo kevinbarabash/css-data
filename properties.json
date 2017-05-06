@@ -1,0 +1,315 @@
+{
+    // border
+
+    "border": {
+        "category": "border",
+        "syntax": "<border-width> || <border-style> || <border-color>",
+        "children": ["border-top", "border-right", "border-bottom", "border-left"]
+    },
+
+    "border-top": {
+        "category": "border",
+        "syntax": "<border-width> || <border-style> || <border-color>"
+    },
+
+    "border-right": {
+        "category": "border",
+        "syntax": "<border-width> || <border-style> || <border-color>"
+    },
+
+    "border-bottom": {
+        "category": "border",
+        "syntax": "<border-width> || <border-style> || <border-color>"
+    },
+
+    "border-left": {
+        "category": "border",
+        "syntax": "<border-width> || <border-style> || <border-color>"
+    },
+
+    "border-color": {
+        "category": "border",
+        "syntax": "<color>{1,4}",
+        "children": ["border-top-color", "border-right-color", "border-bottom-color", "border-left-color"]
+    },
+
+    "border-top-color": {
+        "category": "border",
+        "syntax": "<color>"
+    },
+
+    "border-right-color": {
+        "category": "border",
+        "syntax": "<color>"
+    },
+
+    "border-bottom-color": {
+        "category": "border",
+        "syntax": "<color>"
+    },
+
+    "border-left-color": {
+        "category": "border",
+        "syntax": "<color>"
+    },
+
+    "border-width": {
+        "category": "border",
+        "syntax": "<length>{1,4}",
+        "children": ["border-top-width", "border-right-width", "border-bottom-width", "border-left-width"]
+    },
+
+    "border-top-width": {
+        "category": "border",
+        "syntax": "<length>"
+    },
+
+    "border-right-width": {
+        "category": "border",
+        "syntax": "<length>"
+    },
+
+    "border-bottom-width": {
+        "category": "border",
+        "syntax": "<length>"
+    },
+
+    "border-left-width": {
+        "category": "border",
+        "syntax": "<length>"
+    },
+
+    // box properties
+
+    "box-sizing": {
+        "category": "box",
+        "syntax": "content-box | border-box"
+    },
+
+    "display": {
+        "category": "box",
+        "syntax": "block | inline-block | flex | inline-flex | inline | table | none"
+    },
+
+    "margin": {
+        "category": "box",
+        "syntax": "[<length> | <percentage> | auto]{1,4}"
+    },
+
+    "margin-top": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "margin-right": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "margin-bottom": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "margin-left": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "opacity": {
+        "category": "box",
+        "syntax": "<number>"
+    },
+
+    "overflow": {
+        "category": "box",
+        "stynax": "visible | hidden | scroll | auto"
+    },
+
+    "overflow-x": {
+        "category": "box",
+        "stynax": "visible | hidden | scroll | auto"
+    },
+
+    "overflow-y": {
+        "category": "box",
+        "stynax": "visible | hidden | scroll | auto"
+    },
+
+    "padding": {
+        "category": "box",
+        "syntax": "[<length> | <percentage> | auto]{1,4}"
+    },
+
+    "padding-top": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "padding-right": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "padding-bottom": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "padding-left": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "position": {
+        "category": "box",
+        "syntax": "static | relative | absolute | sticky | fixed"
+    },
+
+    "top": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "right": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "bottom": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "left": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "width": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "min-width": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "max-width": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "height": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "min-height": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "max-height": {
+        "category": "box",
+        "syntax": "<length> | <percentage> | auto"
+    },
+
+    "visibility": {
+        "category": "box",
+        "syntax": "visible | hidden | collapse"
+    },
+
+    "z-index": {
+        "category": "box",
+        "syntax": "auto | <integer>"
+    },
+
+    // flex
+
+    "align-contents": {
+        "category": "flex",
+        "syntax": "flex-start | flex-end | center | space-between | space-around | space-evenly | stretch"
+    },
+
+    "align-items": {
+        "category": "flex",
+        "syntax": "flex-start | flex-end | center | baseline | stretch"
+    },
+
+    "align-self": {
+        "category": "flex",
+        "syntax": "auto | flex-start | flex-end | center | baseline | stretch"
+    },
+
+    "flex-direction": {
+        "category": "flex",
+        "syntax": "row | row-reverse | column | colum-reverse"
+    },
+
+    "justify-content": {
+        "category": "flex",
+        "syntax": "flex-start | flex-end | center | space-between | space-around | space-evenly"
+    },
+
+    "flex": {}, // TODO
+
+    "flex-grow": {
+        "category": "flex",
+        "syntax": "<number>"
+    },
+
+    "flex-shrink": {
+        "category": "flex",
+        "syntax": "<number>"
+    },
+
+    "flex-basis": {
+        "category": "flex",
+        "syntax": "content | <width>"
+    },
+
+    // filter
+
+    "filter": {
+        "category": "filter",
+        "syntax": "<filter-function> [<filter-function>]* | none"
+    },
+
+    // font TODO
+
+    "font": {},
+
+    "font-family": {},
+
+    "font-style": {},
+
+    "font-variant": {},
+
+    "font-weight": {},
+
+    // transform TODO
+
+    "transform": ["<transform-function>", "none"],
+
+    "transform-style": ["flat", "preserve-3d"],
+
+    "transform-origin": {},
+
+    // transition TODO
+
+    "transition": {},
+
+    "transition-property": {},
+
+    "transition-duration": {},
+
+    "transition-timing-function": {},
+
+    "transition-delay": {},
+
+    // misc
+
+    "pointer-events": ["auto", "none", "visiblePainted", "visibleFill", "visibleStroke", "visible", "painted", "fill", "stroke", "all", "inherit"]
+}
